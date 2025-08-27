@@ -1,21 +1,19 @@
-import React from "react"
-import Navbar from "./components/Navbar"
-import { SignedIn, SignedOut, useUser } from "@clerk/clerk-react"
-import Educator from "./pages/Educator"
-import Student from "./pages/Student"
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import { SignedIn, SignedOut, useUser } from "@clerk/clerk-react";
+import Educator from "./pages/Educator";
+import Student from "./pages/Student";
 
 export default function App() {
-  const { user } = useUser()
+  const { user } = useUser();
 
   return (
-    <div>
+    <div className="bg-gray-900 min-h-screen text-white">
       <Navbar />
       <main className="p-6">
         <SignedOut>
-          <p className="text-center mt-20 text-lg">
-            Welcome to <span className="font-semibold">AI Education</span>.  
-            Please sign in to continue.
-          </p>
+          <Hero />
         </SignedOut>
 
         <SignedIn>
@@ -27,5 +25,5 @@ export default function App() {
         </SignedIn>
       </main>
     </div>
-  )
+  );
 }
