@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: write  
+  contents: write   # 👈 lets Actions push to gh-pages branch
 
 jobs:
   build-deploy:
@@ -20,7 +20,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci   # faster + safer than npm install in CI
+        run: npm install   # 👈 use install since no lockfile yet
 
       - name: Build project
         run: npm run build
