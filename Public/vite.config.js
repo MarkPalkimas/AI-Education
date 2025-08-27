@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/AI-Education/", // <-- set this to your repo name
+  base: "/AI-Education/",   // <-- MUST match repo name exactly (case-sensitive!)
 });
