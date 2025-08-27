@@ -11,7 +11,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@clerk/clerk-react": "^4.29.4"
+    "@clerk/clerk-react": "^4.29.4",
+    "framer-motion": "^10.12.16",
+    "@tsparticles/react": "^2.8.0",
+    "@tsparticles/engine": "^2.8.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
