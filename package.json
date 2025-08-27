@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",                   // Start local dev server
-    "build": "vite build",           // Build production files into ./dist
-    "preview": "vite preview"        // Preview production build locally
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
