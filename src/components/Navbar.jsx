@@ -1,22 +1,23 @@
-import React from "react"
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react"
+// src/components/Navbar.jsx
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-white shadow px-6 py-4">
-      <h1 className="text-2xl font-bold text-indigo-600">AI Education</h1>
+    <nav className="flex justify-between items-center px-6 py-4 bg-gray-900 text-white shadow-md">
+      <h1 className="text-2xl font-bold">AI Education</h1>
       <div>
         <SignedOut>
           <SignInButton>
-            <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700">
+            <button className="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-500">
               Sign In
             </button>
           </SignInButton>
         </SignedOut>
+
         <SignedIn>
           <UserButton />
         </SignedIn>
       </div>
     </nav>
-  )
+  );
 }
